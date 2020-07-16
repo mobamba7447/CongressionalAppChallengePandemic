@@ -1,2 +1,2 @@
 # CongressionalAppChallengePandemic
-The submission to the congressional app challenge. 
+Congressional App Challenge. Project Pandemic

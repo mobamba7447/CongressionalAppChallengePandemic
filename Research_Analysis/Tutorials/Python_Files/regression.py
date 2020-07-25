@@ -1,6 +1,7 @@
 import pandas as pd 
 import quandl
 import sklearn
+import math
 df = quandl.get('WIKI/GOOGL')
 #this is the datafram from quandl we are extracting
 #printing the head of the dataframe 

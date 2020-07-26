@@ -29,3 +29,4 @@ func tokenizeText(for text: String) {
 
 determineLanguage(for: quote)
 tokenizeText(for: quote)
+//the functions have the quotes

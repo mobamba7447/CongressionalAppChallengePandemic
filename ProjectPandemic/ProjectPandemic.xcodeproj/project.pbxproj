@@ -16,6 +16,7 @@
 		1D83B2D024C0D87C009499E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D83B2CE24C0D87C009499E1 /* LaunchScreen.storyboard */; };
 		1D83B2DB24C0D87C009499E1 /* ProjectPandemicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D83B2DA24C0D87C009499E1 /* ProjectPandemicTests.swift */; };
 		1D83B2E624C0D87C009499E1 /* ProjectPandemicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D83B2E524C0D87C009499E1 /* ProjectPandemicUITests.swift */; };
+		25CC0BF124CD3F2400B923DD /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC0BF024CD3F2400B923DD /* BarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1D83B2E124C0D87C009499E1 /* ProjectPandemicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectPandemicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D83B2E524C0D87C009499E1 /* ProjectPandemicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectPandemicUITests.swift; sourceTree = "<group>"; };
 		1D83B2E724C0D87C009499E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25CC0BF024CD3F2400B923DD /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +103,11 @@
 		1D83B2BF24C0D87A009499E1 /* ProjectPandemic */ = {
 			isa = PBXGroup;
 			children = (
+				25CC0BF224CD415100B923DD /* Models */,
 				1D83B2C024C0D87A009499E1 /* AppDelegate.swift */,
 				1D83B2C224C0D87A009499E1 /* SceneDelegate.swift */,
 				1D83B2C724C0D87A009499E1 /* ContentView.swift */,
+				25CC0BF024CD3F2400B923DD /* BarView.swift */,
 				1D83B2C924C0D87C009499E1 /* Assets.xcassets */,
 				1D83B2CE24C0D87C009499E1 /* LaunchScreen.storyboard */,
 				1D83B2D124C0D87C009499E1 /* Info.plist */,
@@ -137,6 +141,13 @@
 				1D83B2E724C0D87C009499E1 /* Info.plist */,
 			);
 			path = ProjectPandemicUITests;
+			sourceTree = "<group>";
+		};
+		25CC0BF224CD415100B923DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +285,7 @@
 				1D83B2C124C0D87A009499E1 /* AppDelegate.swift in Sources */,
 				1D83B2C824C0D87A009499E1 /* ContentView.swift in Sources */,
 				1D83B2C324C0D87A009499E1 /* SceneDelegate.swift in Sources */,
+				25CC0BF124CD3F2400B923DD /* BarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,10 +8,17 @@ with open("stringprocessing.txt", "w") as textholder:
         file_path = f'{path}/{x}'
         j = json.load(open(file_path, "rb"))
       
-
-        print(j['paper_id'])
-        textholder.write(str(j['paper_id']))
+        for x in j['abstract']:
+            par_text = str(x['text'])
+            textholder.write(par_text)
+        # print(j['paper_id'])
+        # textholder.write(str(j['paper_id']))
 
         break
 
+
+# with open('output.txt', 'w') as out:
+#   for x in j['abstract']:
+#     par_text = x['text']
+#     out.write(par_text)
 

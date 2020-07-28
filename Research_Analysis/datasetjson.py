@@ -1,24 +1,28 @@
-import os 
+import os
 import json
-path = '/Users/jahankhan/CongressionalAppChallengePandemic/Research_Analysis/NLPModel/DatasetCORD'
-res = os.listdir(path) 
+import pandas
+import gensim
+import nltk
+nltk.download('punkt')
+path = "/Users/jahankhan/CongressionalAppChallengePandemic/Research_Analysis/NLPModel/DatasetCORD"
+json_folder = os.listdir(path)
 with open("stringprocessing.txt", "w") as textholder:
-    for x in res:
-     # print(x)
-        file_path = f'{path}/{x}'
-        j = json.load(open(file_path, "rb"))
-      
-        for x in j['abstract']:
-            par_text = str(x['text'])
-            textholder.write(par_text)
-        # print(j['paper_id'])
-        # textholder.write(str(j['paper_id']))
+    for file in json_folder:
+        file_path = f"{path}/{file}"
 
-        break
+        if ".json" in file:
+            j = json.load(open(file_path))
+            for par in j["abstract"]:
+                par_text = par["text"]
+                textholder.write(par_text)
 
-
-# with open('output.txt', 'w') as out:
-#   for x in j['abstract']:
-#     par_text = x['text']
-#     out.write(par_text)
-
+            
+            # 
+# import nltk
+# file_content = open("myfile.txt").read()
+# tokens = nltk.word_tokenize(file_content)
+# print tokens
+with open("/Users/jahankhan/CongressionalAppChallengePandemic/Research_Analysis/stringprocessing.txt", "r") as aggregate_content:
+    aggregate_content_text = aggregate_content.read()
+    token = nltk.word_tokenize(aggregate_content_text)
+    print(token)

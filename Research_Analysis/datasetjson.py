@@ -1,30 +1,30 @@
-import os
+import os 
 import json
-import pandas as pd
-from gensim.models import Word2Vec
-path = "/Users/*****NAME******/CongressionalAppChallengePandemic/Research_Analysis/NLPModel/DatasetCORD"
-json_folder = os.listdir(path)
-with open("stringprocessing.txt", "w") as textholder:
-    for file in json_folder:
-        file_path = f"{path}/{file}"
+import nltk
+import gensim
+nltk.download("punkt")
 
+path = "/Users/*****NAME*****/SwiftAppProjects/CongressionalAppChallengePandemic/Research_Analysis/NLPModel/DatasetCORD"
+json_folder = os.listdir(path)
+with open("stringprocessing.txt", "w") as output_text:
+    for file in json_folder:
+        
+        file_path = f"{path}/{file}"
+        
         if ".json" in file:
             j = json.load(open(file_path))
+            output_text.write("key: " + j["paper_id"] + "\n")
+            
+            #j = dictionary, j['abstract'] = list, par = dictionary, par['text'] = String
             for par in j["abstract"]:
                 par_text = par["text"]
-                textholder.write(par_text)
-
+                output_text.write(par_text + "\n")
             
-            # 
-# import nltk
-# file_content = open("myfile.txt").read()
-# tokens = nltk.word_tokenize(file_content)
-# print tokens
-with open("/Users/*****NAME*********/CongressionalAppChallengePandemic/Research_Analysis/stringprocessing.txt", "r") as aggregate_content:
-    aggregate_content_text = aggregate_content.read()
-    token_jar = []
-    token = aggregate_content_text.split(".")
-    for i in token:
-        token_jar.append(gensim.utils.simple_preprocess(i))
-    print(token_jar)
-    print(token)
+            output_text.write("\n")
+
+with open("stringprocessing.txt") as token_text:
+    token_list = list(token_text)
+    
+    for token in token_list:
+        new_token = gensim.utils.simple_preprocess(token)
+        print(new_token)

@@ -17,13 +17,17 @@ with open("stringprocessing.txt", "w") as output_text:
                 output_text.write(par_text + "\n")
             
           
-def read_corpus(file_name, tokens_only=False):
-    with smart_open.open(file_name, encoding="iso-8859-1") as file:
-        for i, line in enumerate(file):
-            tokens = gensim.utils.simple_preprocess(line)
+def read_corpus(corpus_file, tokens_only=False):
+    with smart_open.open(corpus_file, encoding="iso-8859-1") as corpus:
+        for i, doc in enumerate(corpus):
+            token = gensim.utils.simple_preprocess(doc)
             if tokens_only:
-                yield tokens
+                yield token
             else:
-                yield gensim.models.doc2vec.TaggedDocument(tokens, [i])
+                yield gensim.models.doc2vec.TaggedDocument(token, [i])
 train_corpus = list(read_corpus("stringprocessing.txt"))
 print(train_corpus)
+
+model = gensim.models.doc2vec.Doc2Vec(vector_size=100, min_count=7, epochs=40)
+model.build_vocab(train_corpus)
+model.train(train_corpus, total_examples=model.corpus_count, epochs=model.epochs)

@@ -1,2 +1,2 @@
 # CongressionalAppChallengePandemic
-Congressional App Challenge. Project Pandemic
+Our submission to the Congressional App Challenge: Beyond

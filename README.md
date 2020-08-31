@@ -1,2 +1,2 @@
 # CongressionalAppChallengePandemic
-Our submission to the Congressional App Challenge: Beyond
+Our submission to the Congressional App Challenge: Beyond Science

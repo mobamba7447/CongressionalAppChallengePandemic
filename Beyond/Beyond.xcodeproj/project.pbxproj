@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,7 @@
 		25065D0C24FB4DEB0075BEC6 /* ViewStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25065D0B24FB4DEB0075BEC6 /* ViewStyler.swift */; };
 		25065D0F24FC68430075BEC6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25065D0E24FC68430075BEC6 /* Constants.swift */; };
 		BEABE8507F1D635273AB7AD9 /* Pods_Beyond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28221A5D7351847DDCBF725F /* Pods_Beyond.framework */; };
+		CADCA28F2500759B00BF1D01 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CADCA28E2500759B00BF1D01 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		25065D0E24FC68430075BEC6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		28221A5D7351847DDCBF725F /* Pods_Beyond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beyond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C297647D8B412A8E118CD3 /* Pods-Beyond.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beyond.debug.xcconfig"; path = "Target Support Files/Pods-Beyond/Pods-Beyond.debug.xcconfig"; sourceTree = "<group>"; };
+		CADCA28E2500759B00BF1D01 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D467D8E0AA4C40C08CB0CA8A /* Pods-Beyond.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beyond.release.xcconfig"; path = "Target Support Files/Pods-Beyond/Pods-Beyond.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 				25065CF224FB14F20075BEC6 /* Main.storyboard */,
 				25065CF524FB14F50075BEC6 /* Assets.xcassets */,
 				25065CF724FB14F50075BEC6 /* LaunchScreen.storyboard */,
+				CADCA28E2500759B00BF1D01 /* GoogleService-Info.plist */,
 				25065CFA24FB14F50075BEC6 /* Info.plist */,
 			);
 			path = Beyond;
@@ -128,7 +131,6 @@
 				29C297647D8B412A8E118CD3 /* Pods-Beyond.debug.xcconfig */,
 				D467D8E0AA4C40C08CB0CA8A /* Pods-Beyond.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -195,6 +197,7 @@
 				25065CF924FB14F50075BEC6 /* LaunchScreen.storyboard in Resources */,
 				25065CF624FB14F50075BEC6 /* Assets.xcassets in Resources */,
 				25065CF424FB14F20075BEC6 /* Main.storyboard in Resources */,
+				CADCA28F2500759B00BF1D01 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
